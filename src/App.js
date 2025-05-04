@@ -1,27 +1,31 @@
+import './normalize.css';
 import './App.css';
+
 
 function App() {
   return (
     <div className="body">
       {/* navbar */}
       <header className="navbar">
-        <div className="logo">Meu Logo</div>
-        <nav>
-          <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">Sobre Mim</a></li>
-            <li><a href="#formação">Formação</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contatos</a></li>
-          </ul>
-        </nav>
-        {/* Fixed Logo */}
-        <div className="whatsapp-box">
-          <a href="https://wa.me/SEU_NUMERO" target="_blank" rel="noopener noreferrer">
-            <img src="whatsapp-logo.png" alt="Ícone Whatsapp com seu link" />
-          </a>
+        <div className="logo">
+          <img src="/logo.png" alt="Logo do site" />
         </div>
+        <nav>
+            <ul className='ul-navbar'>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-me">Sobre mim</a></li>
+              <li><a href="#formação">Formação</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav>
       </header>
+      {/* Fixed Logo */}
+      <div className="whatsapp-box">
+        <a href="https://wa.me/SEU_NUMERO" target="_blank" rel="noopener noreferrer">
+          <img src="whatsapp-logo.png" alt="Ícone Whatsapp com seu link" />
+        </a>
+      </div>
       {/* Section Home */}
       <section id="home" className="home">
         <h1>Gabriel Calixto</h1>

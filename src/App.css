@@ -1,7 +1,70 @@
-body{
+.body {
     background-color: #000000;
-    font-family: sans-serif;
     color: #ffffff;
-    margin: 0;
     padding: 20px;
+
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2dvh 10vh;
+    margin: 3dvh 18dvh 8dvh 18dvh;
+    background-color: #ffffff;
+    border-radius: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2dvh;
+    list-style: none;
+    margin: -1.3dvh;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.32s ease;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+}
+
+.ul-navbar {
+    font-family: 'roboto-mono';
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(168, 2, 184);
+}
+
+nav ul li:hover {
+    background-color: #71248f;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 1s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1dvh;
+
+}
+
+.logo img {
+    width: 120px;
+    height: 45px;
+    margin: -10px -10px -10px 60px;
+
 }
