@@ -4,28 +4,33 @@ import './App.css';
 
 function App() {
   return (
-    <div className="body">
-      {/* navbar */}
+    <div className="landing-page">
+      {/* navbar 1*/}
       <header className="navbar">
         <div className="logo">
-          <img src="/logo.png" alt="Logo do site" />
+          <a href="#home">
+            <img src="/logo.png" alt="Logo do site" />
+          </a>
         </div>
         <nav>
-            <ul className='ul-navbar'>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about-me">Sobre mim</a></li>
-              <li><a href="#formação">Formação</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#contato">Contatos</a></li>
-            </ul>
+          <ul className='ul-navbar'>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">Sobre mim</a></li>
+            <li><a href="#formação">Formação</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contatos</a></li>
+          </ul>
         </nav>
       </header>
       {/* Fixed Logo */}
-      <div className="whatsapp-box">
-        <a href="https://wa.me/SEU_NUMERO" target="_blank" rel="noopener noreferrer">
-          <img src="whatsapp-logo.png" alt="Ícone Whatsapp com seu link" />
+      <aside className="whatsapp-box">
+        <div className="whatsapp-text">
+          <p>Entre em contato comigo</p>
+        </div >
+        <a href="https://wa.me/5532999681739?text=Ol%C3%A1,%20tudo%20bem?%20Vi%20seu%20site%20e%20gostaria%20de%20uma%20conversa." target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="Ícone Whatsapp com seu link" />
         </a>
-      </div>
+      </aside>
       {/* Section Home */}
       <section id="home" className="home">
         <h1>Gabriel Calixto</h1>
@@ -71,7 +76,7 @@ function App() {
         <h2>Contato</h2>
         <p>Entre em contato comigo através do meu e-mail:</p>
       </section >
-    </div>
+    </div >
   );
 }
 

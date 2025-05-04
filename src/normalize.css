@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 /* 2. Remove margens padrão */
 body,
 h1,
