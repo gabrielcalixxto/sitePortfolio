@@ -1,6 +1,7 @@
 import './normalize.css';
 import './App.css';
 
+const whatsappLink = "https://wa.me/5532999681739?text=Ol%C3%A1,%20tudo%20bem?%20Vi%20seu%20site%20e%20gostaria%20de%20uma%20conversa.";
 
 function App() {
   return (
@@ -16,35 +17,55 @@ function App() {
           <ul className='ul-navbar'>
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">Sobre mim</a></li>
-            <li><a href="#formação">Formação</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contatos</a></li>
+            <li><a href="#formation">Formação</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contacts">Contatos</a></li>
           </ul>
         </nav>
       </header>
       {/* Fixed Logo */}
       <aside className="whatsapp-box">
-        <div className="whatsapp-text">
-          <p>Entre em contato comigo</p>
-        </div >
-        <a href="https://wa.me/5532999681739?text=Ol%C3%A1,%20tudo%20bem?%20Vi%20seu%20site%20e%20gostaria%20de%20uma%20conversa." target="_blank" rel="noopener noreferrer">
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+          <div className="whatsapp-text">
+            <p>Entre em contato comigo</p>
+          </div >
+        </a>
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="Ícone Whatsapp com seu link" />
         </a>
       </aside>
       {/* Section Home */}
       <section id="home" className="home">
-        <h1>Gabriel Calixto</h1>
-        <span className="sub-title">Desenvolvedor Full Stack | Foco em soluções ágeis e escaláveis</span>
-        <p>A tecnologia serve como ponte para impulsionar a liberdade, a eficiência e a evolução das empresas</p>
-        <ul className="title-links">
-          <li>Github</li>
-          <li>HackerRank</li>
-          <li>Linkedin</li>
-          <li>Currículo</li>
-        </ul>
-        <p>Links:</p>
-        <span className="title-projects">Projetos Principais</span>
-        <div className="project-exibition">Box dos projetos</div>
+        <article className="home-article">
+          <h1>Gabriel Calixto</h1>
+          <span className="home-subtitle">Desenvolvedor Full Stack | Foco em soluções e eficiência</span>
+          <p>A tecnologia serve como ponte para impulsionar a liberdade, a eficiência e a evolução das empresas</p>
+          <div className="home-links">
+            <p>Links: </p>
+            <ul>
+              <li>
+                <a href="https://github.com/gabrielcalixxto" target="_blank" rel="noopener noreferrer">
+                  <p>Github</p>
+                  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Ícone do GitHub" />
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/gabrielcalixxto" target="_blank" rel="noopener noreferrer">
+                  <p>Linkedin</p>
+                  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Ícone do LinkedIn" />
+                </a>
+              </li>
+              <li>
+                <a href="/CV - Gabriel Calixto.pdf" target="_blank" rel="noopener noreferrer">
+                  <p>Currículo</p>
+                  <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Ícone do Currículo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <span className="title-projects">Projetos Principais</span>
+          <div className="project-exibition">Box dos projetos</div>
+        </article>
       </section>
       {/* section about - me */}
       <section id="about-me" className="about-me">
@@ -61,18 +82,18 @@ function App() {
         </div>
       </section >
       {/* Seção Formação */}
-      <section id="formação" className="formacao">
+      <section id="formation" className="formation">
         <h2>Formação</h2>
         <p>Formação em Análise e Desenvolvimento de Sistemas - Unopar</p>
       </section >
       {/* Seção Projetos */}
-      <section id="projetos" className="projetos">
+      <section id="projects" className="projects">
         <h2>Projetos</h2>
         <p>Projetos que desenvolvi e estou desenvolvendo</p>
         <div className="project-box">Box dos projetos</div>
       </section >
       {/* Seção Contato */}
-      <section id="contato" className="contato">
+      <section id="contacts" className="contacts">
         <h2>Contato</h2>
         <p>Entre em contato comigo através do meu e-mail:</p>
       </section >
